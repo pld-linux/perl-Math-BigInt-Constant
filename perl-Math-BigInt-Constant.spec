@@ -17,7 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 # Source0-md5:	a3bb2ca99e9a0031969cc374ec0a67ba
 BuildRequires:	perl-Math-BigInt >= 1.50
 BuildRequires:	perl(Math::BigFloat) >= 1.26
-BuildRequires:	perl-devel >= 5.8.0
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-Math-BigInt >= 1.50
 Requires:	perl(Math::BigFloat) >= 1.26
