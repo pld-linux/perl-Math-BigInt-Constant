@@ -8,18 +8,18 @@
 Summary:	Math::BigInt::Constant - arbitrary sized constant integers
 Summary(pl):	Math::BigInt::Constant - sta³e ca³kowite o dowolnym rozmiarze
 Name:		perl-Math-BigInt-Constant
-Version:	1.05
+Version:	1.06
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a3bb2ca99e9a0031969cc374ec0a67ba
-BuildRequires:	perl-Math-BigInt >= 1.50
+# Source0-md5:	03241d6b40f0dda51d00cf6103c156ff
+BuildRequires:	perl-Math-BigInt >= 1.74
 BuildRequires:	perl(Math::BigFloat) >= 1.26
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.50
+Requires:	perl-Math-BigInt >= 1.74
 Requires:	perl(Math::BigFloat) >= 1.26
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
