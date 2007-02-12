@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	BigInt-Constant
 Summary:	Math::BigInt::Constant - arbitrary sized constant integers
-Summary(pl):	Math::BigInt::Constant - sta≥e ca≥kowite o dowolnym rozmiarze
+Summary(pl.UTF-8):   Math::BigInt::Constant - sta≈Çe ca≈Çkowite o dowolnym rozmiarze
 Name:		perl-Math-BigInt-Constant
 Version:	1.06
 Release:	1
@@ -31,11 +31,11 @@ constants in the script at compile time, but will not let you create
 constant values on the fly, nor work for strings and/or floating point
 constants like "1e5".
 
-%description -l pl
-Ten modu≥ pozwala definiowaÊ sta≥e BigInty dla kaødego obiektu. Zwyk≥e
-"use Math::BigInt ':constant'" wy≥apie wszystkie sta≥e ca≥kowite w
-skrypcie w czasie kompilacji, ale nie pozwoli na tworzenie sta≥ych
-warto∂ci w locie, ani nie bÍdzie dzia≥aÊ z ≥aÒcuchami czy sta≥ymi
+%description -l pl.UTF-8
+Ten modu≈Ç pozwala definiowaƒá sta≈Çe BigInty dla ka≈ºdego obiektu. Zwyk≈Çe
+"use Math::BigInt ':constant'" wy≈Çapie wszystkie sta≈Çe ca≈Çkowite w
+skrypcie w czasie kompilacji, ale nie pozwoli na tworzenie sta≈Çych
+warto≈õci w locie, ani nie bƒôdzie dzia≈Çaƒá z ≈Ça≈Ñcuchami czy sta≈Çymi
 zmiennoprzecinkowymi typu "1e5".
 
 %prep
