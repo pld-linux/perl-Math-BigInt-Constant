@@ -8,19 +8,19 @@
 Summary:	Math::BigInt::Constant - arbitrary sized constant integers
 Summary(pl.UTF-8):	Math::BigInt::Constant - stałe całkowite o dowolnym rozmiarze
 Name:		perl-Math-BigInt-Constant
-Version:	1.06
-Release:	2
+Version:	1.08
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	03241d6b40f0dda51d00cf6103c156ff
-BuildRequires:	perl-Math-BigInt >= 1.74
+# Source0-md5:	a62d900bcbb2ea84cfb69a557d4bf0a8
 BuildRequires:	perl(Math::BigFloat) >= 1.26
+BuildRequires:	perl-Math-BigInt >= 1.74
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.74
 Requires:	perl(Math::BigFloat) >= 1.26
+Requires:	perl-Math-BigInt >= 1.74
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -59,6 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc BUGS CHANGES LICENSE NEW README TODO
+%doc BUGS CHANGES LICENSE README TODO
+%{perl_vendorlib}/Math/BigFloat/Constant.pm
 %{perl_vendorlib}/Math/BigInt/Constant.pm
 %{_mandir}/man3/*
