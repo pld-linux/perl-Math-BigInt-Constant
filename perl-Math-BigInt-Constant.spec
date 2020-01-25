@@ -4,7 +4,6 @@
 
 %define		pdir	Math
 %define		pnam	BigInt-Constant
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math::BigInt::Constant - arbitrary sized constant integers
 Summary(pl.UTF-8):	Math::BigInt::Constant - stałe całkowite o dowolnym rozmiarze
 Name:		perl-Math-BigInt-Constant
