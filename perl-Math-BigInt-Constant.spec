@@ -7,20 +7,22 @@
 Summary:	Math::BigInt::Constant - arbitrary sized constant integers
 Summary(pl.UTF-8):	Math::BigInt::Constant - stałe całkowite o dowolnym rozmiarze
 Name:		perl-Math-BigInt-Constant
-Version:	1.08
-Release:	2
+Version:	1.16
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a62d900bcbb2ea84cfb69a557d4bf0a8
+Source0:	https://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	3efd690bb05424ca66edd2c7be4e9a14
 URL:		http://search.cpan.org/dist/Math-BigInt-Constant/
 BuildRequires:	perl(Math::BigFloat) >= 1.26
-BuildRequires:	perl-Math-BigInt >= 1.74
+BuildRequires:	perl(Math::BigRat) >= 2.005002
+BuildRequires:	perl-Math-BigInt >= 2.005002
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl(Math::BigFloat) >= 1.26
-Requires:	perl-Math-BigInt >= 1.74
+Requires:	perl(Math::BigRat) >= 2.005002
+Requires:	perl-Math-BigInt >= 2.005002
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -62,4 +64,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc BUGS CHANGES LICENSE README TODO
 %{perl_vendorlib}/Math/BigFloat/Constant.pm
 %{perl_vendorlib}/Math/BigInt/Constant.pm
+%{perl_vendorlib}/Math/BigRat/Constant.pm
 %{_mandir}/man3/*
