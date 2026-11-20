@@ -8,7 +8,7 @@ Summary:	Math::BigInt::Constant - arbitrary sized constant integers
 Summary(pl.UTF-8):	Math::BigInt::Constant - stałe całkowite o dowolnym rozmiarze
 Name:		perl-Math-BigInt-Constant
 Version:	1.16
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -64,5 +64,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc BUGS CHANGES LICENSE README TODO
 %{perl_vendorlib}/Math/BigFloat/Constant.pm
 %{perl_vendorlib}/Math/BigInt/Constant.pm
+%dir %{perl_vendorlib}/Math/BigRat
 %{perl_vendorlib}/Math/BigRat/Constant.pm
 %{_mandir}/man3/*
